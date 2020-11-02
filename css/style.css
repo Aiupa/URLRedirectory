@@ -1,0 +1,146 @@
+/* base */
+html, body {
+    margin: 0;
+    padding: auto;
+    font-family: "montserrat", sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* global  */
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+h3 {
+    margin: 0;
+    color: #ee6123;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
+
+a {
+    color: #ee6123;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Search  */
+input {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0.4);
+    padding: 17px 30px;
+    width: 20vw;
+    margin: auto 1rem auto auto;
+}
+
+/* Search button */
+.btn {
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: #ee6123;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.btn::before, .btn::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: black;
+    transform: skewX(50deg);
+    transition: .4s linear;
+}
+
+.btn::before {
+    top: -4px;
+    left: 10%;
+}
+
+.btn::after {
+    bottom: -4px;
+    right: 10%;
+}
+
+.btn:hover::before {
+    left: 80%;
+}
+
+.btn:hover::after {
+    right: 80%;
+}
+
+/* main section */
+#main {
+    background-image: url('../images/hello.jpg');
+    height: 55vh;
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    width: 100vw;
+}
+
+header #logo {
+    height: 120px;
+    padding-left: 30px;;
+}
+
+#main form {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#result {
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 30px;
+    margin: 20px auto;
+    width: 25vw;
+}
+
+.center {
+    text-align: center;
+}
+
+/*  second section  */
+#brands {
+    background-color: #eff7fc;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.picture {
+    margin: auto auto 2rem auto;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: auto;
+    margin: 2rem auto;
+}
+
+footer #logo {
+    height: 100px;
+}
